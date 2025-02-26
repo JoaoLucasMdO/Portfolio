@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link do Bootstrap para o carrossel -->
+     <link rel="shortcut icon" href="./img/ícone.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">João Lucas Melo de Oliveira</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre" class="container mt-5">
+        <h2>Sobre Mim</h2>
+        <p>Atualmente, sou aluno do curso de Desenvolvimento de Software Multiplataforma na Fatec Votorantim, onde tenho aprimorado minhas habilidades em desenvolvimento web. Já participei de diversos projetos, nos quais criei sistemas que consomem APIs REST que também desenvolvi. Essas APIs utilizam bancos de dados como MongoDB e Firebase. No desenvolvimento do Back-End, trabalho com linguagens como JavaScript e TypeScript, enquanto no Front-End, utilizo frameworks como Next.js ou HTML puro. Em todos os projetos, busco sempre oferecer a melhor experiência ao usuário, garantindo uma visualização eficiente e intuitiva dos dados.</p>
+    </section>
+
+    <section id="projetos" class="container mt-5">
+        <h2>Meus Projetos</h2>
+
+        <!-- Carrossel -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/projeto1EcosRev.gif" class="d-block w-100" alt="Projeto 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>EcosRev</h5>
+                        <a href="https://github.com/Ecosrev/PI-DSM-front?tab=readme-ov-file" target="_blank"><p>Ecosrev é uma plataforma web desenvolvida com o objetivo de incentivar o descarte correto de resíduos eletroeletrônicos. </p></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/projeto2CadastroProfessor.png" class="d-block w-100" alt="Projeto 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cadastro De Professores</h5>
+                        <a href="https://github.com/GesleyOliveira/projetointer" target="_blank"><p>Sistema web desenvolvido visando facilitar o cadastro de professores na unidade de educação.</p></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/projeto3NewWeather.png" class="d-block w-100" alt="Projeto 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>New Weather</h5>
+                        <a href="https://github.com/JoaoLucasMdO/New_Weather/tree/master/src" target="_blank"><p>Sistema web de monitoramento do clima visando melhorar a visualização do clima atual pela população.</p></a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+    </section>
+
+    <section id="contato" class="container mt-5">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através do meu e-mail: <a href="mailto:projetofatec01@gmail.com">projetofatec01@gmail.com</a></p>
+        <p>Veja meus outros projetos em: <a href="https://github.com/JoaoLucasMdO?tab=repositories">JoaoLucasMdO</a></p>
+    </section>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

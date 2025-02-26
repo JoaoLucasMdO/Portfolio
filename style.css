@@ -1,0 +1,149 @@
+/* Definindo um estilo básico */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header e navegação (navbar fixa no topo) */
+header {
+    background-color: #343a40;
+    padding: 20px 0;
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;
+    width: 100%; /* Garantir que a navbar ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+.navbar {
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-left: 2%;
+}
+
+.navbar-nav .nav-link {
+    color: #160404; /* Cor branca para os links */
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff8c00; /* Cor laranja no hover */
+}
+
+/* Ajuste para que o conteúdo da página não fique "por baixo" da navbar fixa */
+body {
+    padding-top: 80px; /* Ajuste o valor conforme a altura da navbar */
+}
+
+/* Seções */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo para o carrossel */
+.carousel-item img {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff8c00;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-inner {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Estilos para o navbar-brand (onde estará seu nome) */
+.navbar-brand {
+    color: #ff8c00; /* Cor laranja para destacar o nome */
+    font-size: 2rem; /* Tamanho maior da fonte para dar mais visibilidade */
+    font-weight: bold; /* Deixa o texto em negrito para chamar mais atenção */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras para melhorar a legibilidade */
+    text-transform: uppercase; /* Transformar as letras em maiúsculas para um efeito visual mais forte */
+    transition: all 0.3s ease; /* Transição suave para o efeito hover */
+}
+
+/* Efeito de hover no navbar-brand */
+.navbar-brand:hover {
+    color: #fff; /* Muda para branco quando passar o mouse */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra no texto para dar mais destaque */
+}
+
+/* Seção de responsividade */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.6rem; /* Diminui o tamanho da fonte em dispositivos menores */
+    }
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    font-size: 1.2rem; /* Tamanho de fonte legível */
+    line-height: 1.6;  /* Maior espaçamento entre as linhas para melhorar a legibilidade */
+    color: #343a40;    /* Cor do texto para um tom escuro e fácil de ler */
+    background-color: #f9f9f9; /* Fundo suave para destacar o parágrafo */
+    padding: 20px;      /* Espaçamento interno para deixar o texto mais arejado */
+    border-radius: 8px; /* Bordas arredondadas para suavizar a aparência */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidade */
+    margin-bottom: 20px; /* Espaçamento entre parágrafos ou outros elementos */
+    max-width: 900px;    /* Limitar a largura do parágrafo para melhorar a leitura */
+    margin-left: auto;   /* Alinha o parágrafo ao centro */
+    margin-right: auto;
+}
