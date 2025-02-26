@@ -147,3 +147,80 @@ p {
     margin-left: auto;   /* Alinha o parágrafo ao centro */
     margin-right: auto;
 }
+
+/* Estilo para o h4 */
+h4 {
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #343a40; /* Cor escura para contraste */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar mais destaque */
+}
+
+/* Efeito de hover no h4 */
+h4:hover {
+    color: #ff8c00; /* Cor laranja no hover */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+}
+
+.project-title {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;  /* Ajuste o padding conforme necessário */
+    background-size: contain; /* Garante que a imagem seja ajustada sem distorcer */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+    color: white; /* Cor do texto, para garantir que fique visível sobre a imagem */
+    font-size: 18px; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas para um visual mais suave */
+    text-decoration: none; /* Remove o sublinhado do link */
+    transition: background-size 0.3s ease; /* Transição suave para efeito ao passar o mouse */
+}
+
+.project-title a {
+    color: inherit; /* Garante que o link tenha a mesma cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.project-title:hover {
+    background-size: 120%; /* Aumenta a imagem de fundo quando o mouse passa por cima */
+}
+
+.project-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 250px; /* Defina a altura para o card */
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra para dar efeito de card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-link {
+    text-decoration: none;
+    color: rgb(19, 14, 14); /* Cor do texto para que o título fique visível */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adiciona sombra ao texto para destacar */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Efeito de elevar o card quando o usuário passa o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.project-card h4 {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        height: 200px; /* Ajusta a altura do card para dispositivos menores */
+    }
+}
