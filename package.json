@@ -2,13 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joaolucasmdo.github.io/Portfolio",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "next build && gh-pages -d out"
+    "lint": "next lint"
   },
   "dependencies": {
     "materialize-css": "^1.0.0",
