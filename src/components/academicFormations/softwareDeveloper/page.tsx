@@ -9,7 +9,7 @@ export default function SoftwareDevelopment() {
         
         <div className="mb-4 md:mb-0 md:w-1/3 flex justify-center">
           <Image
-            src="/Portfolio/fatec-votorantim.png"
+            src="/fatec-votorantim.png"
             alt="Imagem da Fatec Votorantim"
             width={220}
             height={220}

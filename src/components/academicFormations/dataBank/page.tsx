@@ -9,7 +9,7 @@ export default function DataBank() {
         <div className="mb-4 md:mb-0 md:w-1/3 flex justify-center">
   
           <Image
-            src="/Portfolio/etec-votorantim.png"
+            src="/etec-votorantim.png"
             alt="Imagem da Etec Elias Miguel Jr."
             width={220}
             height={220}
