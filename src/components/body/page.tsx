@@ -1,6 +1,7 @@
 'use client';
 import Projects from "../projects/page";
 import Formations from "../academicFormations/page";
+import Certifications from "../certifications/page";
 
 export default function Body() {
   return (
@@ -33,6 +34,14 @@ export default function Body() {
       <section id="formacoes">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Formações Acadêmicas</h2>
         <Formations />
+      </section>
+
+      <hr className="my-12 border-gray-300" />
+
+      {/* Seção Projetos */}
+      <section id="certificacoes">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Certificações</h2>
+        <Certifications />
       </section>
     </main>
   );
