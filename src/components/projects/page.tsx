@@ -43,7 +43,7 @@ export default function Projects() {
       {/* Container do conteúdo do projeto */}
       <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
         {activeProject === 'powerbi' && <PowerBI />}
-        {activeProject === 'integrator' && <IntegratorProjectsEx />}
+        {activeProject === 'integrator' && <IntegratorProjects />}
       </div>
     </div>
   );
