@@ -73,6 +73,17 @@ export default function FrontEnd() {
                     ➡️
                 </button>
             </div>
+            
+             {/* Indicadores */}
+            <div className="flex justify-center mt-4 gap-2">
+                {images.map((_, idx) => (
+                    <button
+                        key={idx}
+                        onClick={() => setCurrentIndex(idx)}
+                        className={`h-2 w-2 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
+                    />
+                ))}
+            </div>
 
             {/* Descrição e link */}
             <div className="mt-4 text-center max-w-xl px-4">
@@ -97,19 +108,6 @@ export default function FrontEnd() {
                     Validar Certificado ⬆️
                 </a>
 
-            </div>
-
-
-
-            {/* Indicadores */}
-            <div className="flex justify-center mt-4 gap-2">
-                {images.map((_, idx) => (
-                    <button
-                        key={idx}
-                        onClick={() => setCurrentIndex(idx)}
-                        className={`h-2 w-2 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
-                    />
-                ))}
             </div>
         </div>
     );

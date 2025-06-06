@@ -11,11 +11,17 @@ export default function Body() {
         <div className="bg-gray-100 rounded-2xl shadow-lg p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-700 mb-4">Sobre Mim</h2>
           <p className="text-gray-800 leading-relaxed text-base md:text-lg">
-            Atualmente, sou aluno do curso de <strong>Desenvolvimento de Software Multiplataforma</strong> na <strong>Fatec Votorantim</strong>, onde venho aprimorando minhas habilidades em desenvolvimento web. 
-            Participei de diversos projetos nos quais desenvolvi sistemas que consomem <strong>APIs REST</strong> criadas por mim, utilizando bancos de dados como <strong>MongoDB</strong> e <strong>Firebase</strong>.
+            Sou um entusiasta da tecnologia com formação técnica em <strong>Administração de Banco de Dados</strong> pela <strong>ETEC</strong>, onde tive meu primeiro contato com o <strong>SQL Server</strong> e desenvolvi uma base sólida no uso de bancos de dados relacionais.
             <br /><br />
-            No <strong>Back-End</strong>, trabalho com <strong>JavaScript</strong> e <strong>TypeScript</strong>; no <strong>Front-End</strong>, utilizo frameworks como <strong>Next.js</strong> ou utilizo <strong>HTML</strong> puro. 
-            Em todos os projetos, busco proporcionar a melhor experiência possível ao usuário, garantindo uma visualização de dados clara, eficiente e intuitiva.
+            Atualmente, estou cursando <strong>Desenvolvimento de Software Multiplataforma</strong> na faculdade, ampliando meus conhecimentos em diversas áreas da programação.
+            <br /><br />
+            No <strong>Front-End</strong>, trabalho com <strong>React</strong> e tenho experiência com o framework <strong>Next.js</strong>, criando interfaces modernas e responsivas.
+            <br />
+            No <strong>Back-End</strong>, utilizo o <strong>Express</strong> para construir APIs robustas e escaláveis.
+            <br />
+            Também possuo conhecimento em bancos de dados <strong>NoSQL</strong>, como <strong>MongoDB</strong> e <strong>Firebase</strong>, além de experiência com bancos relacionais como <strong>MySQL</strong>.
+            <br /><br />
+            Estou sempre buscando novos desafios e aprendizados na área de desenvolvimento, com foco em criar soluções eficientes e bem estruturadas.
           </p>
         </div>
       </section>

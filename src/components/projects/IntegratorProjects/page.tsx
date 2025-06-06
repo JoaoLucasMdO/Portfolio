@@ -2,13 +2,22 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { title } from 'process';
 
 const images = [
   {
+    title: 'Projeto Integrador - EcosRev',
     src: '/EcosRev.png',
     alt: 'Projeto EcosRev',
     description: 'Ecosrev é uma plataforma web desenvolvida com o objetivo de incentivar o descarte correto de resíduos eletroeletrônicos.',
     link: 'https://github.com/Ecosrev/PI-DSM-front',
+  },
+  {
+    title: 'Projeto Integrador - NewWeather',
+    src: '/newweather.png',
+    alt: 'Projeto NewWeather',
+    description: 'NewWeather é uma aplicação que fornece informações meteorológicas em tempo real.',
+    link: 'https://github.com/JoaoLucasMdO/New_Weather',
   },
 ];
 
@@ -25,9 +34,11 @@ export default function ProjectCarousel() {
 
   return (
     <div className="w-full flex flex-col items-center py-10">
-      <h2 className="text-2xl font-semibold mb-6 text-gray-800">Meus Projetos</h2>
-
       <div className="relative w-full max-w-xl min-w-[280px] aspect-[16/9] overflow-hidden rounded-lg shadow-lg">
+        {/* Título do projeto */}
+        <h3 className="text-xl md:text-2xl font-semibold text-blue-700 mb-4 text-center">
+          {images[currentIndex].title}
+        </h3>
         <div
           className="flex h-full transition-transform duration-500 ease-in-out w-full"
           style={{
@@ -50,8 +61,6 @@ export default function ProjectCarousel() {
             </div>
           ))}
         </div>
-
-
         {/* Botões de navegação */}
         <button
           onClick={prevSlide}
@@ -67,6 +76,17 @@ export default function ProjectCarousel() {
         </button>
       </div>
 
+      {/* Indicadores */}
+      <div className="flex justify-center mt-4 gap-2">
+        {images.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentIndex(idx)}
+            className={`h-2 w-2 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
+          />
+        ))}
+      </div>
+
       {/* Descrição e link */}
       <div className="mt-4 text-center max-w-xl px-4">
         <p className="text-gray-700 mb-2">{images[currentIndex].description}</p>
@@ -80,16 +100,6 @@ export default function ProjectCarousel() {
         </a>
       </div>
 
-      {/* Indicadores */}
-      <div className="flex justify-center mt-4 gap-2">
-        {images.map((_, idx) => (
-          <button
-            key={idx}
-            onClick={() => setCurrentIndex(idx)}
-            className={`h-2 w-2 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
-          />
-        ))}
-      </div>
     </div>
   );
 }
